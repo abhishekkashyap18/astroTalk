@@ -201,7 +201,7 @@ function Home() {
           animate={controls}
           className="w-full"
         >
-          <img src="/astroHand.webp" alt="" className="w-full h-96" />
+          <img src="/astroHand.webp" alt="" className="w-full h-auto sm:h-96" />
         </motion.div>
         <motion.div
           initial={{ y: 70, opacity: 0 }} // Initial scale (original size)
