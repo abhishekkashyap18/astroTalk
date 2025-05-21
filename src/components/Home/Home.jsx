@@ -454,7 +454,7 @@ function Home() {
           alt=""
         />
 
-        <div className="flex justify-center py-20 gap-4 sm:gap-20 ml-28 sm:ml-0">
+        <div className="flex justify-center py-20 gap-4 sm:gap-20 ml-16 sm:ml-0">
           <motion.div 
             initial={{ y: 60, opacity: 0 }} // Initial scale (original size)
             whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
