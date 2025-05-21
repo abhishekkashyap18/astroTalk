@@ -533,7 +533,7 @@ function Home() {
           <h1 className="sm:text-5xl text-2xl font-bold my-8 py-10">
             Last Materials In Blog
           </h1>
-          <ul className="flex sm:flex-row flex-col gap-10">
+          <ul className="flex sm:flex-row flex-col gap-10 -ml-10 sm:-ml-0">
             <li className="border-2 border-gray-500 rounded-lg overflow-hidden w-[65vw] sm:w-[40%] flex flex-col gap-4 justify-center">
               <div className="overflow-hidden">
               <motion.img src="/blog1.jpg" alt="" 
