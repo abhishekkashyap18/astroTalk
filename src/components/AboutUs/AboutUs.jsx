@@ -12,7 +12,7 @@ function AboutUs() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-7xl font-bold pb-4"
+          className="sm:text-7xl text-2xl font-bold pb-4"
         >
           About Us
         </motion.h1>
@@ -21,7 +21,7 @@ function AboutUs() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-xl font-semibold"
+          className="sm:text-xl text-base font-normal sm:font-semibold ml-9 text-center sm:ml-0"
         >
           Bringing Clarity and Insight to Your Life's Journey Through the Power
           of Astrology
@@ -58,8 +58,8 @@ function AboutUs() {
       </div>
 
       <div className="w-full flex justify-evenly py-32 px-32">
-        <ul className="flex gap-20">
-          <li className="flex gap-8">
+        <ul className="flex sm:flex-row flex-col gap-20">
+          <li className="flex gap-8 w-[60vw] sm:w-auto">
             <motion.img
               src="/icon1.webp"
               alt=""
@@ -128,23 +128,23 @@ function AboutUs() {
         </ul>
       </div>
 
-      <div className="flex justify-center pl-40 pb-20 gap-32">
+      <div className="flex sm:flex-row flex-col justify-center pl-40 pb-20 gap-32">
         <motion.div
           initial={{ y: 50, opacity: 0 }} // Initial scale (original size)
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="flex flex-col gap-10 w-[40%]"
+          className="flex flex-col gap-10 w-[60vw] sm:w-[40%] -ml-16 sm:-ml-0"
         >
-          <h1 className="text-4xl font-bold">
+          <h1 className="sm:text-4xl text-xl font-bold">
             We know everything about astrology
           </h1>
-          <p className="text-lg font-normal">
+          <p className="sm:text-lg text-base font-normal">
             Astrology is one of the earliest attempts made by man to find the
             order hidden behind or within the confusing and apparent chaos that
             exists in the world.
           </p>
-          <p className="text-lg font-normal">
+          <p className="sm:text-lg text-base font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi
             tellus, pulvinar vel tempus eget, finibus vitae ante. Fusce sit amet
             velit eleifend, iaculis velit quis, malesuada lacus. Vestibulum
@@ -152,13 +152,13 @@ function AboutUs() {
             ultrices. Nullam rhoncus elit eget libero varius dapibus.
           </p>
         </motion.div>
-        <div className="w-[40%]">
+        <div className="sm:w-[40%] w-[90vw] -ml-16 sm:-ml:0">
           <motion.div
             initial={{ y: 50, opacity: 0 }} // Initial scale (original size)
             whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
             transition={{ duration: 0.9, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="bg-[#2433b3] text-white flex flex-col gap-8 justify-center items-center h-full w-[60%]"
+            className="bg-[#2433b3] text-white flex flex-col gap-8 justify-center items-center h-full py-5 sm:py-0 w-[70vw] sm:w-[60%]"
           >
             <span className="flex gap-3">
               <GiCardRandom className="size-12" />
@@ -186,12 +186,12 @@ function AboutUs() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-white text-3xl font-bold py-20 px-44"
+          className="text-white sm:text-3xl text-2xl font-bold py-20 px-44"
         >
           Meet Our Leading Astrologers
         </motion.h1>
-        <ul className="flex justify-center px-44 gap-28">
-          <li className="flex flex-col gap-3 border-2 border-gray-600 text-white rounded-lg overflow-hidden">
+        <ul className="flex sm:flex-row flex-col justify-center px-44 gap-28">
+          <li className="flex flex-col gap-3 border-2 border-gray-600 text-white rounded-lg overflow-hidden w-[50vw] -ml-6 sm:-ml-0 sm:w-auto">
             <div className="overflow-hidden">
             <motion.img
               src="/portrait.jpg"
@@ -224,7 +224,7 @@ function AboutUs() {
               amet sint. Exercitation veniam consequat sunt nostrud amet.
             </motion.p>
           </li>
-          <li className="flex flex-col gap-3 border-2 border-gray-600 text-white rounded-lg overflow-hidden">
+          <li className="flex flex-col gap-3 border-2 border-gray-600 text-white rounded-lg overflow-hidden w-[50vw] -ml-6 sm:-ml-0 sm:w-auto">
             <div className="overflow-hidden">
             <motion.img
               src="/portrait.jpg"
@@ -257,7 +257,7 @@ function AboutUs() {
               amet sint. Exercitation veniam consequat sunt nostrud amet.
             </motion.p>
           </li>
-          <li className="flex flex-col gap-3 border-2 border-gray-600 text-white rounded-lg overflow-hidden">
+          <li className="flex flex-col gap-3 border-2 border-gray-600 text-white rounded-lg overflow-hidden w-[50vw] -ml-6 sm:-ml-0 sm:w-auto">
             <div className="overflow-hidden">
             <motion.img
               src="/portrait.jpg"
@@ -292,7 +292,7 @@ function AboutUs() {
           </li>
         </ul>
 
-        <ul className="flex justify-center gap-72 text-white py-72">
+        <ul className="flex sm:flex-row flex-col justify-center gap-24 sm:gap-72 text-white py-32 sm:py-72">
           <li className="text-center">
             <h1 className="text-4xl font-extrabold">546K</h1>
             <motion.h3
@@ -338,17 +338,17 @@ function AboutUs() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-white pt-60  pl-60 flex flex-col gap-8"
+          className="text-white pt-60  pl-60 flex flex-col gap-8 -ml-14 sm:-ml-0"
         >
-          <h1 className="text-6xl font-semibold w-[60%]">
+          <h1 className="sm:text-6xl text-2xl font-semibold w-[60%]">
             Get your free daily number every day when you Contact Us!
           </h1>
-          <p className="text-lg font-medium w-[60%]">
+          <p className="sm:text-lg text-base font-normal sm:font-medium w-[60%]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
             rem facere recusandae dolorum officiis inventore quaerat eius?
             Porro, harum eveniet.
           </p>
-          <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-2xl font-semibold transition duration-300 w-52">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full sm:text-2xl text-base font-semibold transition duration-300 w-44 sm:w-52">
             get started
           </button>
         </motion.div>

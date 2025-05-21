@@ -40,15 +40,15 @@ function Home() {
         }}
       >
         <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-start">
-          <div className="text-center p-8 max-w-2xl ml-32">
-            <h1 className="text-6xl font-bold text-white mb-4">
+          <div className="text-center p-8 max-w-2xl sm:ml-32">
+            <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4">
               Personal Horoscope & Astro Counseling
             </h1>
-            <p className="text-xl text-gray-200 mb-8">
+            <p className="sm:text-xl text-base text-gray-200 mb-8">
               When you have knowledge of what lies ahead, you’ll have absolute
               clarity of the moves you’ll need to make to maximize your 2023.
             </p>
-            <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-2xl font-semibold transition duration-300">
+            <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full sm:text-2xl text-base font-semibold transition duration-300">
               Start Your Journey
             </button>
           </div>
@@ -61,15 +61,15 @@ function Home() {
         />
       </motion.div>
 
-      <div className="w-full h-full flex justify-center items-center py-20 sm:py-40 gap-7 sm:gap-10 flex-col-reverse sm:flex-row">
+      <div className="w-full h-full flex justify-center items-center py-20 sm:py-40 gap-7 sm:gap-10 flex-col-reverse sm:flex-row pl-4 sm:pl-0">
         <div>
-          <ul className="flex gap-4 sm:gap-10 mb-10">
+          <ul className="flex sm:flex-row flex-col justify-center items-center  gap-4 sm:gap-10 mb-4 sm:mb-10">
             <motion.li
               initial={{ y: 40, opacity: 0 }} // Initial scale (original size)
               whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className=" border-2 border-gray-400 rounded-md w-80 flex flex-col justify-between items-center text-center py-9 px-2"
+              className=" border-2 border-gray-400 rounded-md w-[80vw] sm:w-80 flex flex-col justify-between items-center text-center py-9 px-2"
             >
               <img src="/icon1.webp" alt="" />
               <motion.h1
@@ -97,7 +97,7 @@ function Home() {
               whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className=" border-2 border-gray-400 rounded-md w-80 flex flex-col justify-between items-center text-center py-9 px-2"
+              className=" border-2 border-gray-400 rounded-md w-[80vw] sm:w-80 flex flex-col justify-between items-center text-center py-9 px-2"
             >
               <img src="/icon2.webp" alt="" />
               <motion.h1
@@ -121,13 +121,13 @@ function Home() {
               </motion.p>
             </motion.li>
           </ul>
-          <ul className="flex sm:gap-10 gap-4">
+          <ul className="flex sm:flex-row flex-col sm:gap-10 gap-4">
             <motion.li
               initial={{ y: 40, opacity: 0 }} // Initial scale (original size)
               whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className="border-2 border-gray-400 rounded-md w-80 flex flex-col justify-between items-center text-center py-9 px-2"
+              className="border-2 border-gray-400 rounded-md w-[80vw] sm:w-80 flex flex-col justify-between items-center text-center py-9 px-2"
             >
               <img src="/icon3.webp" alt="" />
               <motion.h1
@@ -154,7 +154,7 @@ function Home() {
               whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className="border-2 border-gray-400 rounded-md w-80 flex flex-col justify-between items-center text-center py-9 px-2"
+              className="border-2 border-gray-400 rounded-md w-[80vw] sm:w-80 flex flex-col justify-between items-center text-center py-9 px-2"
             >
               <img src="/icon4.webp" alt="" />
               <motion.h1
@@ -184,17 +184,17 @@ function Home() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="sm:h-[86vh] border-2 border-red-600 h-full w-full"
+          className="sm:h-[86vh] h-full w-full sm:w-auto"
         >
-          <img src="/portrait.jpg" alt="" className="sm:h-full w-full h-72" />
+          <img src="/portrait.jpg" alt="" className="sm:h-full sm:w-auto ml-10 sm:ml-0 w-[80vw] h-72" />
         </motion.div>
       </div>
 
-      <div className="bg-[#2433b3] relative flex gap-20 items-center p-40">
+      <div className="bg-[#2433b3] relative flex sm:flex-row flex-col gap-20 items-center p-40">
         <img
           src="/icon5_files/6452528de6ab51422179aa81_White Top Background 1.webp"
           alt=""
-          className="absolute -top-2"
+          className="absolute top-0 left-0 sm:-top-2"
         />
         <motion.div
           initial={{ scale: 2, opacity: 0 }}
@@ -210,22 +210,22 @@ function Home() {
           viewport={{ once: true }}
           className="flex flex-col justify-center  gap-10 text-white"
         >
-          <h1 className="text-6xl font-bold text-white">
+          <h1 className="sm:text-6xl text-2xl font-bold text-white">
             Get a Glimpse into Your Future with Our Accurate Astrology
             Predictions
           </h1>
-          <p className="text-lg font-semibold">
+          <p className="sm:text-lg text-base font-normal sm:font-semibold">
             Ruled by Mercury, there are a little commons between Gemini and
             Cancer. It’s all about being heard and read. There, the similarities
             end, however. The body, mind and spirit can’t be separated and it’s
             physical being which dictates spiritual contentment.
           </p>
-          <p className="text-lg font-semibold">
+          <p className="sm:text-lg text-base font-normal sm:font-semibold">
             Individuals can gain a deeper understanding of themselves and the
             world around them, and use this knowledge to navigate their lives
             with greater purpose and meaning.
           </p>
-          <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-2xl font-semibold transition duration-300 w-52">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full sm:text-2xl text-base font-semibold transition duration-300 w-44 sm:w-52">
             get started
           </button>
         </motion.div>
@@ -235,7 +235,7 @@ function Home() {
         <img
           src="/icon5_files/645253163b3fe4bfee2fe6c9_White Buttom Background 1.webp"
           alt=""
-          className="absolute -top-4 w-full"
+          className="absolute -top-2 left-0 sm:-top-4 w-full"
         />
 
         <div className="flex flex-col justify-center items-center gap-10">
@@ -244,7 +244,7 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
             transition={{ duration: 0.9, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-4xl font-semibold"
+            className="sm:text-4xl text-2xl font-semibold"
           >
             Online Shop
           </motion.h1>
@@ -253,7 +253,7 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
             transition={{ duration: 0.9, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-xl font-semibold text-center px-64"
+            className="sm:text-xl text-base font-medium sm:font-semibold text-center sm:px-64"
           >
             Wide range of Healing Crystals and Gemstones. For those interested
             in browsing what Crystals we currently have for sale, we have
@@ -264,7 +264,7 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
             transition={{ duration: 0.9, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="flex justify-center items-center gap-4"
+            className="flex sm:flex-row flex-col justify-center items-center gap-4"
           >
             <li className="flex flex-col items-center border-2 border-gray-400 py-5 px-2 overflow-hidden">
               <motion.img src="/gem1.jpg" alt="" 
@@ -454,17 +454,17 @@ function Home() {
           alt=""
         />
 
-        <div className="flex justify-center py-20 gap-20">
-          <motion.div
+        <div className="flex justify-center py-20 gap-4 sm:gap-20 ml-28 sm:ml-0">
+          <motion.div 
             initial={{ y: 60, opacity: 0 }} // Initial scale (original size)
             whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
             transition={{ duration: 0.9, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
-            <h1 className="text-white text-5xl font-semibold">
+            <h1 className="text-white sm:text-5xl text-lg font-medium sm:font-semibold">
               Get Your Gift Offer
             </h1>
-            <h3 className="text-white text-lg font-semibold pb-14 pt-6 w-72">
+            <h3 className="text-white sm:text-lg text-base font-normal sm:font-semibold pb-14 pt-6 w-72">
               Discover Your Destiny: Get Your Free Astrological Reading Now
             </h3>
             <div className="flex gap-10 mb-6">
@@ -490,7 +490,7 @@ function Home() {
                 placeholder="Birth Data"
                 className="bg-[#2433b3] text-white placeholder:text-white border-b-2 border-b-white pb-3"
               />
-              <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full text-2xl font-semibold transition duration-300 w-52 my-10">
+              <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full sm:text-2xl text-base font-semibold transition duration-300 w-44 sm:w-52 my-10">
                 get started
               </button>
             </div>
@@ -517,7 +517,7 @@ function Home() {
               whileInView={{ x: 0, scale: 1, opacity: 1 }} // Scale up to 2x when in view
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className="absolute top-16 right-0 h-[88%]"
+              className="absolute top-16 right-0 h-[88%] invisible sm:visible"
             />
           </div>
         </div>
@@ -530,11 +530,11 @@ function Home() {
           viewport={{ once: true }}
           className="py-20 px-28 text-white "
         >
-          <h1 className="text-5xl font-bold my-8 py-10">
-            Last Materials In Blog{" "}
+          <h1 className="sm:text-5xl text-2xl font-bold my-8 py-10">
+            Last Materials In Blog
           </h1>
-          <ul className="flex gap-10">
-            <li className="border-2 border-gray-500 rounded-lg overflow-hidden w-[40%] flex flex-col gap-4 justify-center">
+          <ul className="flex sm:flex-row flex-col gap-10">
+            <li className="border-2 border-gray-500 rounded-lg overflow-hidden w-[65vw] sm:w-[40%] flex flex-col gap-4 justify-center">
               <div className="overflow-hidden">
               <motion.img src="/blog1.jpg" alt="" 
               whileHover={{scale:1.2}}
@@ -580,7 +580,7 @@ function Home() {
                 Read More
               </motion.p>
             </li>
-            <li className="border-2 border-gray-500 rounded-lg overflow-hidden w-[40%] flex flex-col gap-4 justify-center">
+            <li className="border-2 border-gray-500 rounded-lg overflow-hidden w-[65vw] sm:w-[40%] flex flex-col gap-4 justify-center">
               <div className="overflow-hidden">
               <motion.img src="/blog2.png" alt="" 
               whileHover={{scale:1.2}}
@@ -626,7 +626,7 @@ function Home() {
                 Read More
               </motion.p>
             </li>
-            <li className="border-2 border-gray-500 rounded-lg overflow-hidden w-[40%] flex flex-col gap-4 justify-center">
+            <li className="border-2 border-gray-500 rounded-lg overflow-hidden w-[65vw] sm:w-[40%] flex flex-col gap-4 justify-center">
               <div className="overflow-hidden">
               <motion.img src="/blog3.jpg" alt="" 
               whileHover={{scale:1.2}}

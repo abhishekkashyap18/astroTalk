@@ -64,24 +64,25 @@ function Header() {
             duration: 20,
             ease: "linear",
           }}
+          className="ml-10 sm:ml-0"
         />
-        <img src="/public/logo.webp" alt="" className="absolute left-9 top-8" />
-        <div className="flex justify-between items-center text-white gap-20">
+        <img src="/public/logo.webp" alt="" className="absolute left-[13%] ml-1 sm:ml-0 sm:left-9 top-8" />
+        <div className="flex justify-between items-center text-white gap-5 sm:gap-20">
           <Link
             to="/"
-            className="text-lg font-medium hover:text-orange-600 active:text-orange-500"
+            className="sm:text-lg text-base font-medium sm:font-medium hover:text-orange-600 active:text-orange-500"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-lg font-medium hover:text-orange-600 active:text-orange-500"
+            className="sm:text-lg text-base font-medium sm:font-medium hover:text-orange-600 active:text-orange-500"
           >
             About
           </Link>
           <Link
             to="/contact"
-            className="text-lg font-medium hover:text-orange-600 active:text-orange-500"
+            className="sm:text-lg text-base font-medium sm:font-medium hover:text-orange-600 active:text-orange-500"
           >
             Contact us
           </Link>
