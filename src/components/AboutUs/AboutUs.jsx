@@ -58,7 +58,7 @@ function AboutUs() {
       </div>
 
       <div className="w-full flex justify-evenly py-32 px-32">
-        <ul className="flex sm:flex-row flex-col gap-20 -ml-16 sm:-ml-0">
+        <ul className="flex sm:flex-row flex-col gap-20 -ml-12 sm:-ml-0">
           <li className="flex gap-8 w-[60vw] sm:w-auto">
             <motion.img
               src="/icon1.webp"
