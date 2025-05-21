@@ -13,7 +13,7 @@ function Contact() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-7xl font-bold pb-4"
+          className="sm:text-7xl text-2xl font-bold pb-4"
         >
           Contact Us
         </motion.h1>
@@ -22,7 +22,7 @@ function Contact() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-xl font-semibold"
+          className="sm:text-xl text-base font-medium sm:font-semibold"
         >
           Get Personalized Astrological Advice
         </motion.p>
@@ -57,7 +57,7 @@ function Contact() {
         />
       </div>
 
-      <div className="flex gap-20 pl-32 py-32">
+      <div className="flex sm:flex-row flex-col gap-20 pl-32 py-32">
         <motion.div
           initial={{ y: 60, opacity: 0 }} // Initial scale (original size)
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
@@ -65,10 +65,10 @@ function Contact() {
           viewport={{ once: true }}
           className="w-[35%]"
         >
-          <h1 className="text-5xl font-bold pb-16">
+          <h1 className="sm:text-5xl text-2xl font-bold pb-16 w-[50vw] sm:w-auto">
             Connect with our Astrology Experts
           </h1>
-          <div className="border-2 border-gray-500 mb-10 ">
+          <div className="border-2 border-gray-500 mb-10 w-[70vw] sm:w-auto -ml-14 sm:-ml-0">
             <ul className="flex flex-col gap-2 font-extrabold p-4">
               <li>Office Location:</li>
               <li className="flex gap-2 items-center">
@@ -86,7 +86,7 @@ function Contact() {
             </ul>
           </div>
 
-          <div className="border-2 border-gray-500">
+          <div className="border-2 border-gray-500 w-[70vw] sm:w-auto -ml-14 sm:-ml-0">
             <ul className="flex flex-col gap-2 font-extrabold p-4">
               <li>Opening Hours:</li>
               <li>
@@ -106,7 +106,7 @@ function Contact() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="bg-[#2433b3] w-[45%]"
+          className="bg-[#2433b3] sm:w-[45%] w-[70vw] -ml-14 sm:-ml-0"
         >
           <h1 className="text-3xl font-bold text-white px-5 py-5">
             Send Us A Message
