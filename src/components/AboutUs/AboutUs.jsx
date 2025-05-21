@@ -58,7 +58,7 @@ function AboutUs() {
       </div>
 
       <div className="w-full flex justify-evenly py-32 px-32">
-        <ul className="flex sm:flex-row flex-col gap-20">
+        <ul className="flex sm:flex-row flex-col gap-20 -ml-16 sm:-ml-0">
           <li className="flex gap-8 w-[60vw] sm:w-auto">
             <motion.img
               src="/icon1.webp"
@@ -75,8 +75,8 @@ function AboutUs() {
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
-              <h1 className="text-3xl font-bold">Privacy</h1>
-              <p className="font-semibold">
+              <h1 className="sm:text-3xl text-xl font-bold">Privacy</h1>
+              <p className="sm:font-semibold font-normal">
                 Information obtained during the consultaion is private
               </p>
             </motion.div>
@@ -97,8 +97,8 @@ function AboutUs() {
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
-              <h1 className="text-3xl font-bold">Result Guarantee</h1>
-              <p className="font-semibold">
+              <h1 className="sm:text-3xl text-xl font-bold">Result Guarantee</h1>
+              <p className="sm:font-semibold font-normal">
                 We provided a guaranteed 100% result
               </p>
             </motion.div>
@@ -119,8 +119,8 @@ function AboutUs() {
               transition={{ duration: 0.9, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
-              <h1 className="text-3xl font-bold">Competence</h1>
-              <p className="font-semibold">
+              <h1 className="sm:text-3xl text-3=xl font-bold">Competence</h1>
+              <p className="sm:font-semibold font-normal">
                 We only take on issues that we can solve
               </p>
             </motion.div>
@@ -152,7 +152,7 @@ function AboutUs() {
             ultrices. Nullam rhoncus elit eget libero varius dapibus.
           </p>
         </motion.div>
-        <div className="sm:w-[40%] w-[90vw] -ml-16 sm:-ml:0">
+        <div className="sm:w-[40%] w-[90vw] -ml-20 sm:-ml:0">
           <motion.div
             initial={{ y: 50, opacity: 0 }} // Initial scale (original size)
             whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
@@ -186,11 +186,11 @@ function AboutUs() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-white sm:text-3xl text-2xl font-bold py-20 px-44"
+          className="text-white sm:text-3xl text-2xl font-bold py-20 px-44 -ml-16 sm:-ml-0"
         >
           Meet Our Leading Astrologers
         </motion.h1>
-        <ul className="flex sm:flex-row flex-col justify-center px-44 gap-28">
+        <ul className="flex sm:flex-row flex-col justify-center px-44 gap-28 -ml-16 sm:-ml-0">
           <li className="flex flex-col gap-3 border-2 border-gray-600 text-white rounded-lg overflow-hidden w-[50vw] -ml-6 sm:-ml-0 sm:w-auto">
             <div className="overflow-hidden">
             <motion.img
@@ -338,7 +338,7 @@ function AboutUs() {
           whileInView={{ y: 0, opacity: 1 }} // Scale up to 2x when in view
           transition={{ duration: 0.9, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-white pt-60  pl-60 flex flex-col gap-8 -ml-14 sm:-ml-0"
+          className="text-white pt-60  pl-60 flex flex-col gap-8 -ml-28 sm:-ml-0"
         >
           <h1 className="sm:text-6xl text-2xl font-semibold w-[60%]">
             Get your free daily number every day when you Contact Us!
